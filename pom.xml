@@ -14,14 +14,14 @@
     </parent>
     <groupId>uniloft.springframework</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>sfg-pet-clinic</name>
     <description>SFG Pet clinic</description>
     <scm>
         <connection>scm:git:https://github.com/uniloftsky/sfg-pet-clinic.git</connection>
         <developerConnection>scm:git:https://github.com/uniloftsky/sfg-pet-clinic.git</developerConnection>
         <url>https://github.com/uniloftsky/sfg-pet-clinic.git</url>
-      <tag>HEAD</tag>
+      <tag>sfg-pet-clinic-0.0.2</tag>
   </scm>
 
     <properties>
@@ -61,6 +61,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                     <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                     </checkModificationExcludes>
