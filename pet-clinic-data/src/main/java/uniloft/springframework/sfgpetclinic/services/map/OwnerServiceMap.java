@@ -1,10 +1,12 @@
 package uniloft.springframework.sfgpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import uniloft.springframework.sfgpetclinic.model.Owner;
 import uniloft.springframework.sfgpetclinic.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
