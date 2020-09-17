@@ -1,1 +1,5 @@
+uniloft\springframework\sfgpetclinic\controllers\IndexController.class
+uniloft\springframework\sfgpetclinic\controllers\VetController.class
 uniloft\springframework\sfgpetclinic\SfgPetClinicApplication.class
+uniloft\springframework\sfgpetclinic\bootstrap\DataLoader.class
+uniloft\springframework\sfgpetclinic\controllers\OwnerController.class

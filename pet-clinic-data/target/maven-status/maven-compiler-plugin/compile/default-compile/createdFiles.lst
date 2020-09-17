@@ -1,5 +1,14 @@
-uniloft\springframework\sfgpetclinic\model\Person.class
+uniloft\springframework\sfgpetclinic\model\BaseEntity.class
 uniloft\springframework\sfgpetclinic\model\Owner.class
 uniloft\springframework\sfgpetclinic\model\Pet.class
+uniloft\springframework\sfgpetclinic\services\map\OwnerServiceMap.class
+uniloft\springframework\sfgpetclinic\services\VetService.class
+uniloft\springframework\sfgpetclinic\model\Person.class
+uniloft\springframework\sfgpetclinic\services\map\PetServiceMap.class
+uniloft\springframework\sfgpetclinic\services\map\VetServiceMap.class
+uniloft\springframework\sfgpetclinic\services\CrudService.class
 uniloft\springframework\sfgpetclinic\model\Vet.class
 uniloft\springframework\sfgpetclinic\model\PetType.class
+uniloft\springframework\sfgpetclinic\services\map\AbstractMapService.class
+uniloft\springframework\sfgpetclinic\services\OwnerService.class
+uniloft\springframework\sfgpetclinic\services\PetService.class

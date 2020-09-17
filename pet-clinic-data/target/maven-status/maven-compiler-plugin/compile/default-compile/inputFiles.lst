@@ -1,5 +1,14 @@
 C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\model\PetType.java
+C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\services\map\AbstractMapService.java
+C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\services\map\PetServiceMap.java
+C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\services\CrudService.java
+C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\services\OwnerService.java
 C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\model\Person.java
-C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\model\Owner.java
+C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\services\VetService.java
 C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\model\Pet.java
+C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\model\BaseEntity.java
 C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\model\Vet.java
+C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\services\map\VetServiceMap.java
+C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\model\Owner.java
+C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\services\map\OwnerServiceMap.java
+C:\Users\theto\IdeaProjects\sfg-pet-clinic\pet-clinic-data\src\main\java\uniloft\springframework\sfgpetclinic\services\PetService.java
