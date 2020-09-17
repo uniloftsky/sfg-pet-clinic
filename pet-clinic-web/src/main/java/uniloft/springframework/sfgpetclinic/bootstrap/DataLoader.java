@@ -3,11 +3,14 @@ package uniloft.springframework.sfgpetclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import uniloft.springframework.sfgpetclinic.model.Owner;
+import uniloft.springframework.sfgpetclinic.model.Pet;
 import uniloft.springframework.sfgpetclinic.model.PetType;
 import uniloft.springframework.sfgpetclinic.model.Vet;
 import uniloft.springframework.sfgpetclinic.services.OwnerService;
 import uniloft.springframework.sfgpetclinic.services.PetTypeService;
 import uniloft.springframework.sfgpetclinic.services.VetService;
+
+import java.time.LocalDate;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -38,12 +41,32 @@ public class DataLoader implements CommandLineRunner {
         var owner1 = new Owner();
         owner1.setFirstName("Michael");
         owner1.setLastName("Wetson");
+        owner1.setAddress("123 Bickerel");
+        owner1.setCity("Miami");
+        owner1.setTelephone("123123123");
+
+        Pet mikesPet = new Pet();
+        mikesPet.setPetType(savedDogPetType);
+        mikesPet.setOwner(owner1);
+        mikesPet.setBirthDate(LocalDate.now());
+        mikesPet.setName("Rosco");
+        owner1.getPets().add(mikesPet);
 
         ownerService.save(owner1);
 
         var owner2 = new Owner();
         owner2.setFirstName("Fionna");
         owner2.setLastName("Glenanne");
+        owner2.setAddress("123 Bickerel");
+        owner2.setCity("Miami");
+        owner2.setTelephone("123123123");
+
+        Pet fionnasPet = new Pet();
+        fionnasPet.setName("Just cat");
+        fionnasPet.setOwner(owner2);
+        fionnasPet.setBirthDate(LocalDate.now());
+        fionnasPet.setPetType(savedCatPetType);
+        owner2.getPets().add(fionnasPet);
 
         ownerService.save(owner2);
 
