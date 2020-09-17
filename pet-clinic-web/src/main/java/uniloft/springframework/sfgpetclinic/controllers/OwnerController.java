@@ -5,6 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import uniloft.springframework.sfgpetclinic.services.OwnerService;
 
+@RequestMapping("/owners")
 @Controller
 public class OwnerController {
 
@@ -14,10 +15,15 @@ public class OwnerController {
         this.ownerService = ownerService;
     }
 
-    @RequestMapping({"/owners", "owners", "/owners.html", "owners.html"})
+    @RequestMapping({"/", "", "/index.html", "index.html", "index"})
     public String listOwners(Model model) {
         model.addAttribute("owners", ownerService.findAll());
         return "owners/index";
+    }
+
+    @RequestMapping("/find")
+    public String findOwner() {
+        return "notimplemented";
     }
 
 }
