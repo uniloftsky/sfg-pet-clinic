@@ -3,10 +3,7 @@ package uniloft.springframework.sfgpetclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import uniloft.springframework.sfgpetclinic.model.*;
-import uniloft.springframework.sfgpetclinic.services.OwnerService;
-import uniloft.springframework.sfgpetclinic.services.PetTypeService;
-import uniloft.springframework.sfgpetclinic.services.SpecialtyService;
-import uniloft.springframework.sfgpetclinic.services.VetService;
+import uniloft.springframework.sfgpetclinic.services.*;
 
 import java.time.LocalDate;
 
@@ -17,12 +14,14 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialtyService specialtyService;
+    private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialtyService = specialtyService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -107,5 +106,13 @@ public class DataLoader implements CommandLineRunner {
         vetService.save(vet2);
 
         System.out.println("Loaded vets...");
+
+        Visit visit1 = new Visit();
+        visit1.setDate(LocalDate.now());
+        visit1.setDescription("First visit...");
+        visit1.setPet(fionnasPet);
+
+        visitService.save(visit1);
+
     }
 }
