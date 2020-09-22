@@ -1,12 +1,24 @@
 package uniloft.springframework.sfgpetclinic.model;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "pets")
 public class Pet extends BaseEntity {
 
+    @ManyToOne
+    @JoinColumn(name = "id_type")
     private PetType petType;
+
+    @ManyToOne
+    @JoinColumn(name = "id_owner")
     private Owner owner;
+
+    @Column(name = "birth_date")
     private LocalDate birthDate;
+
+    @Column(name = "name")
     private String name;
 
     public PetType getPetType() {
