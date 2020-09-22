@@ -1,5 +1,6 @@
 package uniloft.springframework.sfgpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import uniloft.springframework.sfgpetclinic.model.Specialty;
 import uniloft.springframework.sfgpetclinic.services.SpecialtyService;
@@ -7,6 +8,7 @@ import uniloft.springframework.sfgpetclinic.services.SpecialtyService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class SpecialtyServiceMap extends AbstractMapService<Specialty, Long> implements SpecialtyService {
 
     @Override
