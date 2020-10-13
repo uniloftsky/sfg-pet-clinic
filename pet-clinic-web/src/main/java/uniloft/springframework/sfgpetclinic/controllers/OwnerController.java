@@ -58,13 +58,13 @@ public class OwnerController {
     }
 
     @RequestMapping("/new")
-    public String initCreationOrUpdateForm(Model model) {
+    public String initCreationForm(Model model) {
         model.addAttribute("owner", new Owner());
         return "owners/createOrUpdateOwnerForm";
     }
 
     @PostMapping("/new")
-    public String processCreationOrUpdateForm(@ModelAttribute Owner owner, Model model) {
+    public String processCreationForm(@ModelAttribute Owner owner, Model model) {
         Owner savedOwner = ownerService.save(owner);
         return "redirect:/owners/" + savedOwner.getId();
     }
@@ -77,6 +77,7 @@ public class OwnerController {
 
     @PostMapping("{id}/edit")
     public String processUpdateForm(@PathVariable String id, @ModelAttribute Owner owner) {
+        owner.setId(Long.valueOf(id));
         Owner savedOwner = ownerService.save(owner);
         return "redirect:/owners/" + savedOwner.getId();
     }
