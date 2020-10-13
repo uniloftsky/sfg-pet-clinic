@@ -9,6 +9,7 @@ import uniloft.springframework.sfgpetclinic.repositories.PetTypeRepository;
 import uniloft.springframework.sfgpetclinic.services.OwnerService;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -36,6 +37,11 @@ public class OwnerSDJpaService implements OwnerService {
         Set<Owner> owners = new HashSet<>();
         ownerRepository.findAll().forEach(owners::add);
         return owners;
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+        return ownerRepository.findAllByLastNameLike(lastName);
     }
 
     @Override

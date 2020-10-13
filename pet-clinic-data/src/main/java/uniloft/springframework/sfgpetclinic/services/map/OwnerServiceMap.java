@@ -8,6 +8,7 @@ import uniloft.springframework.sfgpetclinic.services.OwnerService;
 import uniloft.springframework.sfgpetclinic.services.PetService;
 import uniloft.springframework.sfgpetclinic.services.PetTypeService;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -69,6 +70,12 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 
     @Override
     public Owner findByLastName(String lastName) {
+        return null;
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+        //todo impl
         return null;
     }
 }
